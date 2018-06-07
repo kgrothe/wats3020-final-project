@@ -10,16 +10,14 @@ var panels = document.getElementsByClassName("info");
 
 var panelsCount = panels.length;
 
-var a;
+var i;
 
 // set initial display style of info panels to none
 
-for (a = 0; a < panelsCount; a++) {
+for (i = 0; i < panelsCount; i++) {
     
-    panels[a].style.display = "none";
+    panels[i].style.display = "none";
 }
-
-var i;
 
 // add event listener to all toggle buttons 
 
@@ -36,7 +34,7 @@ for (i = 0; i < buttonsCount; i++) {
     if (info.style.display === "none") {
     info.style.display = "block";
     
-       } else {
+    } else {
         
         info.style.display = "none";
     }
@@ -51,13 +49,11 @@ var contacts = document.querySelectorAll(".contact");
 
 var contactsCount = contacts.length;
 
-var z;
-
 // add event listener to all contact icon buttons
 
-for (z = 0; z < contactsCount; z++){
+for (i = 0; i < contactsCount; i++){
 
-contacts[z].addEventListener("mouseover", showContact);
+  contacts[i].addEventListener("mouseover", showContact);
 
 }
 
@@ -65,6 +61,6 @@ function showContact () {
     alert('mouseover!');
 }
 
-//);
-//}
+
+
 
