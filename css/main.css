@@ -1,0 +1,54 @@
+/* Styles for Final Project - WTPN */
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.jumbotron {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: darkgray
+}
+
+#accordion {
+    background-color: whitesmoke;
+}
+
+.info {
+   display: none; 
+   background-color: #a4c2cc;
+}
+
+.btn {
+    background-color: #d3edf1;
+}
+
+
+.btn:hover {
+    border: none;
+    background-color: cadetblue;
+}
+
+.contact {
+    float: right;
+    
+}
+
+
+.fa {
+    
+    font-size: 300%;
+}
+
+.span {
+    visibility: hidden;
+}
+
+.footer{
+    text-align: center;
+}
