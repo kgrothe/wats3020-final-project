@@ -45,19 +45,18 @@ for (i = 0; i < biosCount; i++) {
         
     summaryAll.push(summaryList);  
     
-    //REMOVE: test code 
+    //TODO: REMOVE: test code 
         
-      if (i === biosCount-1){
-        alert("summary all list after push" + `${summaryAll}` + `${biosCount}` + [i]);
-      }
+     // if (i === biosCount-1){
+     //   alert("summary all list after push" + `${summaryAll}` + `${biosCount}` + [i]);
+     // }
 }
     
 // set initial display style of bio cards to none
 
 for (i = 0; i < biosCount; i++) {      
     
-    bios[i].style.display = "none";
-  
+    bios[i].style.display = "none";  
 }  
 
 // add event listener to all toggle buttons 
@@ -88,7 +87,7 @@ for (i = 0; i < buttonsCount; i++) {
 
 for (i = 0; i < contactsCount; i++){
 
-  contacts[i].addEventListener("mouseover", function() {
+  contacts[i].addEventListener("click", function() {
  // contacts[i].addEventListener("mouseout", hideContact);
 
  // target bio span
@@ -99,10 +98,8 @@ for (i = 0; i < contactsCount; i++){
   
     if (bio.style.display === "none") {
         bio.style.display = "block";        
-    }
-    
+    }    
   });
-
 }
 
 // add second event listener to contact icon buttons to close contact info
@@ -118,13 +115,11 @@ for (i = 0; i < contactsCount; i++){
   // switch contact bio display
   
     if (bio.style.display === "block"){
-        bio.style.display = "none";
-   //  } else {
-    //    bio.style.display = "block";
+        bio.style.display = "none";  
     }
     
   });
-
+  
 }
 
 document.getElementById("summary").addEventListener("click", function(){

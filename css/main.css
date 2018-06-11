@@ -24,6 +24,7 @@ h2 {
 .btn {
     background-color: #d3edf1;
     border-radius: 0;
+    
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -49,13 +50,10 @@ h2 {
 /* styles for button to show contact details */
 
 .contact {
-    float: right;
-    
+    float: right;    
 }
 
-
 .fa {
-    
     font-size: 300%;
 }
 
@@ -68,18 +66,13 @@ span {
     color: #fff;
     text-align: left;
     padding: 10px;
-    
-    
+        
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    
-    
-   
+       
     position: relative;   
     left: 102%;
-   
-
 }
 
 .bio::after {
@@ -99,4 +92,5 @@ span {
 
 .footer {
     text-align: center;
+    font-size: 85%;
 }
