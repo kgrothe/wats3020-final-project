@@ -1,5 +1,9 @@
 /* Styles for Final Project - WTPN */
 
+body {
+    background-color: #f4f8f9;
+}
+
 .content {
     max-width: 500px;
     margin: auto;
@@ -11,8 +15,11 @@
 
 h2 {
     text-align: center;
-    font-weight: bold;
-    color: darkgray
+    font-weight: bold;    
+}
+
+h4 {
+    font-family: 'Kalam', cursive;
 }
 
 #accordion {
@@ -24,6 +31,7 @@ h2 {
 .btn {
     background-color: #d3edf1;
     border-radius: 0;
+    color: #4a4646;
     
 }
 
@@ -37,7 +45,7 @@ h2 {
 .btn:hover {
     border: none;
     background-color: cadetblue;
-    transition: 1s;
+    transition: 2s;
 }
 
 /* style for show/hide panel */
@@ -54,7 +62,7 @@ h2 {
 }
 
 .fa {
-    font-size: 300%;
+    font-size: 320%;
 }
 
 /* styles for contact details info */
@@ -67,23 +75,16 @@ span {
     text-align: left;
     padding: 10px;
         
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-       
+    margin-top: -5px;           
     position: relative;   
     left: 102%;
 }
 
-.bio::after {
-    content: "";
-    border-width: 5px;
-    border-color:  transparent #555 transparent transparent;
-}
 
 .row #summary {
     text-align: center;
-    background-color: white;    
+    background-color: white;  
+    color: green;
 }
 
 .row #summary:hover {
@@ -92,5 +93,5 @@ span {
 
 .footer {
     text-align: center;
-    font-size: 85%;
+    font-size: 90%;
 }
