@@ -19,20 +19,34 @@ h2 {
     background-color: whitesmoke;
 }
 
+/* styles for button to open/close panel */
+
+.btn {
+    background-color: #d3edf1;
+    border-radius: 0;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 0;
+}
+
+.btn:hover {
+    border: none;
+    background-color: cadetblue;
+    transition: 1s;
+}
+
+/* style for show/hide panel */
+
 .info {
    display: none; 
    background-color: #a4c2cc;
 }
 
-.btn {
-    background-color: #d3edf1;
-}
-
-
-.btn:hover {
-    border: none;
-    background-color: cadetblue;
-}
+/* styles for button to show contact details */
 
 .contact {
     float: right;
@@ -45,10 +59,44 @@ h2 {
     font-size: 300%;
 }
 
-.span {
-    visibility: hidden;
+/* styles for contact details info */
+
+span {
+    display: none;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    
+    
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    
+    
+   
+    position: relative;   
+    left: 102%;
+   
+
 }
 
-.footer{
+.bio::after {
+    content: "";
+    border-width: 5px;
+    border-color:  transparent #555 transparent transparent;
+}
+
+.row #summary {
+    text-align: center;
+    background-color: white;    
+}
+
+.row #summary:hover {
+    color: darkgreen;
+}
+
+.footer {
     text-align: center;
 }
