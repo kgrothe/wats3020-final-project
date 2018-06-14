@@ -1,22 +1,22 @@
 // select all buttons with class "toggle"
 
-var buttons = document.querySelectorAll(".toggle");
-var buttonsCount = buttons.length;
+let buttons = document.querySelectorAll(".toggle");
+let buttonsCount = buttons.length;
 
 // select all panels with class "info"
 
-var panels = document.getElementsByClassName("info");
-var panelsCount = panels.length;
+let panels = document.getElementsByClassName("info");
+let panelsCount = panels.length;
 
 // select all buttons with class "contact"
 
-var contacts = document.querySelectorAll(".contact");
-var contactsCount = contacts.length;
+let contacts = document.querySelectorAll(".contact");
+let contactsCount = contacts.length;
 
-// select all spans with class "bio"
+// select all ul with class "bio"
 
-var bios = document.getElementsByClassName("bio");
-var biosCount = bios.length;
+let bios = document.getElementsByClassName("bio");
+let biosCount = bios.length;
 
 // initialize summary 
 
@@ -24,39 +24,35 @@ var summary = [];
 var summaryList = [];
 var summaryAll = [];
 
-console.log(summary);
-console.log(typeof summary);
+let popup = document.getElementsByClassName("popup");
+
+popup[0].style.display = "none";
 
 var i;
 
 // set initial display style of info panels to none
 
 for (i = 0; i < panelsCount; i++) {    
-    panels[i].style.display = "none";
+  panels[i].style.display = "none";
 }
 
-// create summary of information in bio spans (contact info)
+// create summary of information in bio ul (contact info)
 
 for (i = 0; i < biosCount; i++) {
-    summary = bios[i].innerHTML;    
+  summary = bios[i].innerHTML;    
         
     // add to an array
     summaryList = summary.split(",");
         
-    summaryAll.push(summaryList);  
+    summaryAll.push(summaryList);     
     
-    //TODO: REMOVE: test code 
-        
-     // if (i === biosCount-1){
-     //   alert("summary all list after push" + `${summaryAll}` + `${biosCount}` + [i]);
-     // }
 }
     
 // set initial display style of bio cards to none
 
 for (i = 0; i < biosCount; i++) {      
     
-    bios[i].style.display = "none";  
+  bios[i].style.display = "none";  
 }  
 
 // add event listener to all toggle buttons 
@@ -87,17 +83,16 @@ for (i = 0; i < buttonsCount; i++) {
 
 for (i = 0; i < contactsCount; i++){
 
-  contacts[i].addEventListener("click", function() {
- // contacts[i].addEventListener("mouseout", hideContact);
+  contacts[i].addEventListener("click", function() { 
 
- // target bio span
+ // target bio ul
   
   var bio = this.nextElementSibling;
       
   // switch contact bio display
   
     if (bio.style.display === "none") {
-        bio.style.display = "block";        
+      bio.style.display = "block";        
     }    
   });
 }
@@ -108,21 +103,34 @@ for (i = 0; i < contactsCount; i++){
 
   contacts[i].addEventListener("dblclick", function() { 
 
-  // target bio span
+  // target bio ul
     
   var bio = this.nextElementSibling;
   
   // switch contact bio display
   
     if (bio.style.display === "block"){
-        bio.style.display = "none";  
+      bio.style.display = "none";  
     }
     
   });
   
 }
 
+// add event listener to summary button to display/hide summary list
+
 document.getElementById("summary").addEventListener("click", function(){
-    alert(`${summaryAll}`);
+            
+    if (popup[0].style.display === "none"){
+    
+      popup[0].style.display = "block";
+      popup[0].innerHTML = `${summaryAll}`;  
+    
+      } else {
+      
+        popup[0].style.display = "none";
+      }
+        
 });
+
 
