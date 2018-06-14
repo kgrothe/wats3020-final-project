@@ -27,7 +27,7 @@ h4 {
     background-color: whitesmoke;
 }
 
-/* styles for button to open/close panels */
+/* button to open/close panels */
 
 .btn {
     font-family: 'Source Sans Pro', sans-serif;
@@ -48,29 +48,48 @@ h4 {
     background-color: cadetblue;    
 }
 
-/* style for show/hide panel */
+/* show/hide panel */
 
 .info {
    display: none; 
    background-color: #a4c2cc;
 }
 
-/* styles for button to show contact details */
+/* button to show contact details */
 
 .contact {
-    float: right;    
+    float: right;
+    border: 0;
+    background-color: transparent;
 }
+
+.contact:before {
+    border: none;
+}
+
+.contact:hover {
+    border: none;
+}
+
+/* contact button text */
+
+.text {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 85%;    
+}
+
+/* button icon */
 
 .fa {
     font-size: 320%;
 }
 
-/* styles for contact details info */
+/* contact details info */
 
 .bio {
     display: none;
     width: 220px;
-    background-color: #c1c1c1;
+    background-color: #e9ecef;
     font-family:'Source Sans Pro', sans-serif;
     font-size: 95%;
     font-weight: bold;
@@ -82,7 +101,7 @@ h4 {
     left: 102%;
 }
 
-/*styles for summary button */
+/* summary button */
 
 #summary {   
     text-align: center;
@@ -94,7 +113,7 @@ h4 {
     color: darkgreen;
 }
 
-/* styles for popup summary box */
+/* popup summary box */
 
 .popup {
     display: none;
@@ -113,7 +132,6 @@ h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     overflow: auto;
-
 }
 
 ul {
@@ -122,6 +140,7 @@ ul {
 
 .footer {
     padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 90%;
 }
