@@ -125,9 +125,9 @@ h4 {
     border-width: 2px;
     border-color: green;
     padding: 10px 15px 10px 10px;
-    position: absolute;
+    position: fixed;
     top: 5%;
-    left: 10%;
+    left: 8%;
     list-style: none;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
